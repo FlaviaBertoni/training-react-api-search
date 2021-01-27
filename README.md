@@ -1,6 +1,6 @@
 # training-react-api-search
 
-O objetivo dessa aplicacao é aprender a criar uma aplicacao react que liste todos os items retornados de uma api, criando um componente para visualizacao das informacoes e tambem usando o conceito de estado para aplicar um filtro nessa lista, para que assim o usuario possa buscar determinado item que queira.
+O objetivo dessa aplicacao é aprender a criar uma aplicacao react que liste todos os items retornados de uma api REST, criando um componente para visualizacao das informacoes e tambem usando o conceito de estado para aplicar um filtro nessa lista, para que assim o usuario possa buscar determinado item que queira.
 
 ## Criando a aplicacao com react
 
@@ -38,14 +38,12 @@ entender a estrutura e alterar para construir nosso projeto
 
 Agora que sabemos que as informacoes apresentadas no site estao no App.js vamos altera-lo para comecar a construir nossa aplicao de busca
 
-## Create API
+## Criando a API
 
-Use mocky.io to create GET route with json return like: 
-```[{
- name: 'primary',
- color: '#512da8'
-}, {
- name: 'secondary',
- color: '#f9a825'
-}
-]```
+Use https://designer.mocky.io/ to create GET route with json return like: 
+
+```
+[{"name":"primary","color":"#512da8"},{"name":"secondary","color":"#f9a825"}]
+```
+
+Exemplo: https://run.mocky.io/v3/1497dad2-3f2f-4b7b-a778-34a9f5d9565c
