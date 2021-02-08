@@ -12,9 +12,9 @@ function Home() {
   async function loadAllItems() {
     try {
       setLoading(true);
+      setError(false);
       const result = await fetch('https://run.mocky.io/v3/1497dad2-3f2f-4b7b-a778-34a9f5d9565c');
       const items = await result.json();
-      setError(false);
       setItems(items);
     } catch(e) {
       setError(true);
