@@ -4,17 +4,23 @@ import Card from "../../components/Card";
 import './style.css';
 
 function Home() {
-
   const [search, setSearch] = useState('');
   const [items, setItems] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   async function loadAllItems() {
     try {
-      const result = await fetch('https://run.mocky.io/v3/1497dad2-3f2f-4b7b-a778-34a9f5d9565c')
-      const json = await result.json()
-      setItems(json)
+      setLoading(true);
+      const result = await fetch('https://run.mocky.io/v3/1497dad2-3f2f-4b7b-a778-34a9f5d9565c');
+      const json = await result.json();
+      setError(false);
+      setItems(json);
     } catch(e) {
-      console.log(e)
+      setError(true);
+      setItems({});
+    } finally {
+      setLoading(false);
     }
   }
 
@@ -29,27 +35,31 @@ function Home() {
   }
 
   useEffect(() => {
-    loadAllItems()
+    loadAllItems();
   }, [])
 
     return (
       <div className="App">
-      
-        <div className="search-container">
-            <input type="search" className="search" onChange={handleChangeSearch}/>
-        </div>
-
-        <div className="results-container">
-          { getItems().map((item, index) => (
-              <div key={index}>
-                <Card name={item.name} color={item.color} />
-              </div>
-          )) }
-        </div>
-
+        <header>Buscador de Cores</header>
+        <main>
+          <div className="search-container">
+            <input type="search" className="search" placeholder="Busque pelo nome da cor" onChange={handleChangeSearch} />
+          </div>
+          { !loading
+            ? getItems().length > 0
+              ? <div className="cards-wrapper">
+                  { getItems().map((item, index) => (
+                    <Card name={item.name} color={item.color} />
+                  )) }
+                </div>
+              : !error
+                ? <p>Não há cores para essa busca.</p>
+                : <p>Ops... ocorreu um erro.</p>
+            : <p>Buscando...</p>
+          }
+        </main>
       </div>
     );
   }
-  
+
   export default Home;
-  

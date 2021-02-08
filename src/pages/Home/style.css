@@ -1,3 +1,25 @@
+@media (min-width: 768px) {
+  main {
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+}
+
 .search {
-    margin-bottom: 1rem;
+  color: #333;
+  border: 1px solid #dcdce6;
+  border-radius: .25rem;
+  font: 400 16px Roboto, sans-serif;
+  height: 40px;
+  margin-bottom: 1rem;
+  padding: 0 24px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
 }
