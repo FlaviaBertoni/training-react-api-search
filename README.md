@@ -51,6 +51,16 @@ Agora que sabemos que as informações apresentadas no site estão no App.js vam
 - Deve ser apresentada uma mensagem de erro quando ocorrer uma falha na busca
 - Quando não encontrar nenhum token na busca dos tokens deve exibir uma mensagem de vazio
 
+## Protótipo
+
+Deve ter um layout responsivo para resoluções menores, conforme os protótipos abaixo:
+
+### Desktop
+![Desktop](./readme/desktop.png)
+
+### Mobile
+![Mobile](./readme/mobile.png)
+
 ## Criando a API
 
 Use o https://designer.mocky.io/ para criar uma rota que retorne os tokens de cores do nosso Design System, conforme o exemplo: 
@@ -60,3 +70,4 @@ Use o https://designer.mocky.io/ para criar uma rota que retorne os tokens de co
 ```
 
 Exemplo: https://run.mocky.io/v3/1497dad2-3f2f-4b7b-a778-34a9f5d9565c
+
