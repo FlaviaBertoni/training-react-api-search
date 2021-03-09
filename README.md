@@ -1,6 +1,6 @@
 # training-react-api-search
 
-O objetivo dessa aplicacao é aprender a criar uma aplicacao react que liste todos os items retornados de uma api REST, criando um componente para visualizacao das informacoes e tambem usando o conceito de estado para aplicar um filtro nessa lista, para que assim o usuario possa buscar determinado item que queira.
+O objetivo desse projeto é aprender a criar uma aplicação react que liste todos os items retornados de uma api REST, criando um componente para visualização das informações e também usando o conceito de estado para aplicar um filtro nessa lista, para que assim o usuário possa buscar determinado item que queira.
 
 ## Introdução ao React.js
 
@@ -63,7 +63,7 @@ Deve ter um layout responsivo para resoluções menores, conforme os protótipos
 
 ## Criando a API
 
-Use o https://designer.mocky.io/ para criar uma rota que retorne os tokens de cores do nosso Design System, conforme o exemplo: 
+Use o https://designer.mocky.io/ para criar uma rota que retorne os tokens de cores do nosso Design System que estão no arquivo [data.json](./readme/data.json), conforme o exemplo abaixo: 
 
 ```
 [{"name":"primary","color":"#512da8"},{"name":"secondary","color":"#f9a825"}]

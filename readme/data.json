@@ -1,0 +1,75 @@
+[
+    {
+        "name": "primary",
+        "color": "#3f50b5"
+    },
+    {
+        "name": "primary light",
+        "color": "#512da8"
+    },
+    {
+        "name": "primary dark",
+        "color": "#002884"
+    },
+    {
+        "name": "primary contrast text",
+        "color": "#fff"
+    },
+    {
+        "name": "secondary",
+        "color": "#f44336"
+    },
+    {
+        "name": "secondary light",
+        "color": "#ff7961"
+    },
+    {
+        "name": "secondary dark",
+        "color": "#ba000d"
+    },
+    {
+        "name": "secondary contrast text",
+        "color": "#000"
+    },
+    {
+        "name": "error",
+        "color": "#f44336"
+    },
+    {
+        "name": "warning",
+        "color": "#ff9800"
+    },
+    {
+        "name": "info",
+        "color": "#2196f3"
+    },
+    {
+        "name": "success",
+        "color": "#4caf50"
+    },
+    {
+        "name": "text",
+        "color": "rgba(0, 0, 0, 0.87)"
+    },
+    {
+        "name": "text secondary",
+        "color": "rgba(0, 0, 0, 0.54)"
+    },
+    {
+        "name": "text disabled",
+        "color": "rgba(0, 0, 0, 0.38)"
+    },
+
+    {
+        "name": "background",
+        "color": "#fafafa"
+    },
+    {
+        "name": "background paper",
+        "color": "#fff"
+    },
+    {
+        "name": "divider",
+        "color": "rgba(0, 0, 0, 0.12)"
+    }
+]
